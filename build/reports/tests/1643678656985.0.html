@@ -1,0 +1,655 @@
+<html lang="en-gb" class="no-js"><head>
+        <title>
+    Basket | Oscar - Sandbox
+</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="created" content="1st Feb 2022 01:24">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="NOARCHIVE,NOCACHE">
+        
+            <link rel="shortcut icon" href="/static/oscar/favicon.88c4dbe43314.ico">
+        
+
+        
+        
+    
+    
+        <link rel="stylesheet" type="text/css" href="/static/oscar/css/styles.423bec201e38.css">
+    
+    <link rel="stylesheet" href="/static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.5addeac883dd.css">
+    <link rel="stylesheet" type="text/css" href="/static/oscar/css/datetimepicker.c7073cfb16b9.css">
+
+
+        
+        
+
+        
+
+        
+            
+            
+
+        
+
+    </head>
+
+    <body id="default" class="default">
+        
+        
+    
+    
+
+<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
+    
+    <div class="navbar-header">
+        <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".account-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    </div>
+
+    <div class="navbar-collapse account-collapse collapse">
+        <div class="container-fluid">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            
+                <form id="language_selector" class="navbar-left navbar-form" action="/i18n/setlang/" method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="B5OrniEHTj9qZu55vYarlXSYuUPdJdny3fqZz2m2lFumUEbVQfNfrZzxix1JZXPP">
+                    <input name="next" type="hidden" value="/basket/">
+                    <div class="form-group">
+                        <select name="language" class="form-control">
+                            
+                            
+                                <option value="ar">
+                                    العربيّة
+                                </option>
+                            
+                                <option value="ca">
+                                    català
+                                </option>
+                            
+                                <option value="cs">
+                                    česky
+                                </option>
+                            
+                                <option value="da">
+                                    dansk
+                                </option>
+                            
+                                <option value="de">
+                                    Deutsch
+                                </option>
+                            
+                                <option value="en-gb" selected="selected">
+                                    British English
+                                </option>
+                            
+                                <option value="el">
+                                    Ελληνικά
+                                </option>
+                            
+                                <option value="es">
+                                    español
+                                </option>
+                            
+                                <option value="fi">
+                                    suomi
+                                </option>
+                            
+                                <option value="fr">
+                                    français
+                                </option>
+                            
+                                <option value="it">
+                                    italiano
+                                </option>
+                            
+                                <option value="ko">
+                                    한국어
+                                </option>
+                            
+                                <option value="nl">
+                                    Nederlands
+                                </option>
+                            
+                                <option value="pl">
+                                    polski
+                                </option>
+                            
+                                <option value="pt">
+                                    Português
+                                </option>
+                            
+                                <option value="pt-br">
+                                    Português Brasileiro
+                                </option>
+                            
+                                <option value="ro">
+                                    Română
+                                </option>
+                            
+                                <option value="ru">
+                                    Русский
+                                </option>
+                            
+                                <option value="sk">
+                                    Slovensky
+                                </option>
+                            
+                                <option value="uk">
+                                    Українська
+                                </option>
+                            
+                                <option value="zh-hans">
+                                    简体中文
+                                </option>
+                            
+                        </select>
+                    </div>
+                    <button class="btn btn-default" type="submit" data-loading-text="Submitting...">Go</button>
+                </form>
+            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li><a id="login_link" href="/en-gb/accounts/login/"><i class="icon-signin"></i> Login or register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    <header class="header container-fluid">
+        <div class="page_inner">
+            <div class="row">
+                <div class="col-sm-7 h1"><a href="/en-gb/">Oscar</a><small> Sandbox</small></div>
+
+                
+                
+            </div>
+        </div>
+        
+            
+
+
+
+<div class="navbar primary navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header pull-right">
+            
+            <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".primary-collapse">
+                <span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </a>
+        </div>
+
+        <a class="btn btn-default navbar-btn btn-cart navbar-right visible-xs-inline-block" href="/en-gb/basket/">
+            <i class="icon-shopping-cart"></i>
+            Basket
+            
+                
+                    
+                        Total: £9.99
+                    
+                
+            
+        </a>
+
+
+        <div class="navbar-collapse primary-collapse collapse">
+            
+                <ul id="browse" class="nav navbar-nav">
+                    <li class="dropdown active ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Browse store
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" data-navigation="dropdown-menu">
+                            
+                            <li><a tabindex="-1" href="/en-gb/catalogue/">All products</a></li>
+                            
+                                <li class="divider"></li>
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/clothing_1/">Clothing</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                        <li class="dropdown-submenu">
+                                            <a tabindex="-1" href="/en-gb/catalogue/category/books_2/">Books</a>
+                                            <ul class="dropdown-menu">
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/books/fiction_3/">Fiction</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/books/non-fiction_5/">Non-Fiction</a></li>
+                                            
+
+                                            
+                                                </ul></li>
+                                            
+                                
+                            
+                            <li class="divider"></li>
+                            
+                                <li><a href="/en-gb/offers/">Offers</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            
+            
+
+<form method="get" action="/en-gb/search/" class="navbar-form navbar-right">
+    <div class="form-group">
+        <input type="search" name="q" placeholder="Search" tabindex="1" class="form-control" id="id_q">
+    </div>
+    <input type="submit" value="Search" class="btn btn-default">
+</form>
+
+        </div><!-- /navbar-collapse -->
+    </div>
+</div><!-- /navbar -->
+
+        
+    </header>
+
+    
+    
+        <div class="container-fluid page">
+            <div class="page_inner">
+                
+    <ul class="breadcrumb">
+        <li>
+            <a href="/en-gb/">Home</a>
+        </li>
+        <li class="active">Basket</li>
+    </ul>
+
+                
+                    <div class="page-header action">
+                        <h1>
+    Basket
+</h1>
+                    </div>
+                
+                
+
+
+
+<div id="messages" style="visibility: visible;">
+
+</div>
+
+                
+                <div class="content">
+                    
+
+                    
+                    <div id="promotions">
+                        
+                    </div>
+
+                    
+                    <div id="content_inner">
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+        <div class="basket-title hidden-xs">
+            <div class="row">
+                <h2 class="col-sm-6 h3">Items to buy now</h2>
+                <p class="col-sm-3 h3">Quantity</p>
+                <p class="col-sm-1 h3 align-right">Price</p>
+                <p class="col-sm-2 h3 align-right">Total</p>
+            </div>
+        </div>
+    
+
+    
+        <form method="post" class="basket_summary" id="basket_formset">
+            <input type="hidden" name="csrfmiddlewaretoken" value="B5OrniEHTj9qZu55vYarlXSYuUPdJdny3fqZz2m2lFumUEbVQfNfrZzxix1JZXPP">
+            <input type="hidden" name="form-TOTAL_FORMS" value="1" id="id_form-TOTAL_FORMS"><input type="hidden" name="form-INITIAL_FORMS" value="1" id="id_form-INITIAL_FORMS"><input type="hidden" name="form-MIN_NUM_FORMS" value="0" id="id_form-MIN_NUM_FORMS"><input type="hidden" name="form-MAX_NUM_FORMS" value="1000" id="id_form-MAX_NUM_FORMS">
+
+            
+                
+                    
+                    <div class="basket-items">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <input type="hidden" name="form-0-id" value="346947" id="id_form-0-id">
+                                
+                                    
+                                        <a href="/en-gb/catalogue/the-shellcoders-handbook_209/">
+                                            <img class="thumbnail" src="/media/cache/c8/62/c86236fafe92fe77d912a01fce33c3d4.jpg" alt="The shellcoder's handbook">
+                                        </a>
+                                    
+                                
+                            </div>
+                            <div class="col-sm-4">
+                                <h3><a href="/en-gb/catalogue/the-shellcoders-handbook_209/">The shellcoder's handbook</a></h3>
+                                <p class="availability instock">In stock (9999999516 available)</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="checkout-quantity">
+                                    <div class="input-group  ">
+                                        <input type="number" name="form-0-quantity" value="1" min="0" max="9999" class="form-control" id="id_form-0-quantity">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit" data-loading-text="Updating...">Update</button>
+                                    </span>
+                                    </div>
+                                </div>
+                                    <div>
+                                        <a href="#" data-id="0" data-behaviours="remove" class="inline">Remove</a>
+                                        
+                                        <div style="display:none">
+                                            <input type="checkbox" name="form-0-save_for_later" id="id_form-0-save_for_later">
+                                            <input type="checkbox" name="form-0-DELETE" id="id_form-0-DELETE">
+                                        </div>
+                                        
+                                    </div>
+
+                            </div>
+                            <div class="col-sm-1">
+                                
+                                    <p class="price_color align-right">
+                                        
+                                            £9.99
+                                        
+                                    </p>
+                                
+                            </div>
+                            <div class="col-sm-2">
+                                
+                                    <p class="price_color align-right">
+                                        
+                                            £9.99
+                                        
+                                    </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+            
+        </form>
+    
+
+    <div class="row">
+        
+            
+            
+                <div class="col-sm-6">
+                    <div class="sub-header">
+                        <h2>Voucher/promo code</h2>
+                    </div>
+                    <p id="voucher_form_link"><a href="#voucher" class="btn btn-default btn-full">I have a voucher code...</a></p>
+
+                    <div id="voucher_form_container" style="display:none">
+                        <form id="voucher_form" action="/en-gb/basket/vouchers/add/" method="post">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="B5OrniEHTj9qZu55vYarlXSYuUPdJdny3fqZz2m2lFumUEbVQfNfrZzxix1JZXPP">
+                            
+
+
+
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_code" class=" control-label required">
+                        Code
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="text" name="code" maxlength="128" class="form-control" required="" id="id_code">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+
+                            <button type="submit" class="btn btn-info" data-loading-text="Adding...">Add voucher</button>
+                            or <a href="#" id="voucher_form_cancel">cancel</a>
+                        </form>
+                    </div>
+                </div>
+            
+        
+
+        
+            <div class="col-sm-6">
+                <div class="sub-header">
+                    <h2>Totals</h2>
+                </div>
+                
+
+
+
+<div id="basket_totals">
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th colspan="2"><h3>Basket</h3></th>
+            </tr>
+            
+                
+                    
+                
+
+                
+                    
+                        
+                        <tr>
+                            <th class="total">Basket total</th>
+                            <th class="total align-right">
+                                
+                                    £9.99
+                                
+                            </th>
+                        </tr>
+                    
+                
+            
+
+            
+                <tr>
+                    <th>&nbsp;</th>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">
+                        <h3>Shipping</h3>
+                        
+                    </th>
+                </tr>
+                
+                    <tr>
+                        <th class="total">
+                            Free shipping
+                        </th>
+                        <th class="total align-right">
+                            
+                                £0.00
+                            
+                        </th>
+                    </tr>
+                
+            
+
+            
+                
+            
+
+            
+                
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><h3>Post order actions</h3><small>These will be applied once your order is placed.</small></th>
+                        <td></td>
+                    </tr>
+                    
+                        <tr>
+                            <td class="total" colspan="2">
+                                <span class="label label-success">Deferred benefit offer</span><br>
+                                <p>You will have your name changed to Barry!</p>
+                            </td>
+                        </tr>
+                    
+                
+            
+
+            
+                <tr>
+                    <th>&nbsp;</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="total"><h3>Order total</h3></th>
+                    <td class="total align-right">
+                        <h3 class="price_color">
+                            
+                                £9.99
+                            
+                        </h3>
+                    </td>
+                </tr>
+                
+            
+        </tbody>
+    </table>
+</div>
+
+            </div>
+        
+    </div>
+
+
+    
+        <div class="form-group clearfix">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-8">
+                    <a href="/en-gb/checkout/" class="btn btn-lg btn-primary btn-block">Proceed to checkout</a>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    
+
+
+</div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+<footer class="footer container-fluid">
+    
+        
+    
+</footer>
+
+
+        
+        
+  
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="/static/oscar/js/jquery/jquery.min.a09e13ee94d5.js"><\/script>')</script>
+            <script src="/static/oscar/js/oscar/hack.358de0d3d185.js"></script>
+
+        
+  
+
+
+        
+        
+    
+
+    
+
+
+        
+        <script>
+            $(function() {
+                
+    
+    
+    oscar.init();
+
+    
+    var options = {
+        'basketURL': '/en-gb/basket/'
+    };
+    oscar.basket.init(options);
+
+            });
+        </script>
+
+        
+    
+
+</body></html>

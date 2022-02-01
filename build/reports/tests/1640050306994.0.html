@@ -1,0 +1,628 @@
+<html lang="en-gb" class="no-js"><head>
+        <title>
+    Login or register | Oscar - Sandbox
+</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="created" content="21st Dec 2021 01:31">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="NOARCHIVE,NOCACHE">
+        
+            <link rel="shortcut icon" href="/static/oscar/favicon.88c4dbe43314.ico">
+        
+
+        
+        
+    
+    
+        <link rel="stylesheet" type="text/css" href="/static/oscar/css/styles.423bec201e38.css">
+    
+    <link rel="stylesheet" href="/static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.5addeac883dd.css">
+    <link rel="stylesheet" type="text/css" href="/static/oscar/css/datetimepicker.c7073cfb16b9.css">
+
+
+        
+        
+
+        
+
+        
+            
+            
+
+        
+
+    </head>
+
+    <body id="default" class="default">
+        
+        
+    
+    
+
+<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
+    
+    <div class="navbar-header">
+        <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".account-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    </div>
+
+    <div class="navbar-collapse account-collapse collapse">
+        <div class="container-fluid">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            
+                <form id="language_selector" class="navbar-left navbar-form" action="/i18n/setlang/" method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="aBvqTxPYvUfuaZyx14Smf9INJh43L1c6ziilqB7RAVEort23CpEMIz2DZUzXvXCK">
+                    <input name="next" type="hidden" value="/accounts/login/">
+                    <div class="form-group">
+                        <select name="language" class="form-control">
+                            
+                            
+                                <option value="ar">
+                                    العربيّة
+                                </option>
+                            
+                                <option value="ca">
+                                    català
+                                </option>
+                            
+                                <option value="cs">
+                                    česky
+                                </option>
+                            
+                                <option value="da">
+                                    dansk
+                                </option>
+                            
+                                <option value="de">
+                                    Deutsch
+                                </option>
+                            
+                                <option value="en-gb" selected="selected">
+                                    British English
+                                </option>
+                            
+                                <option value="el">
+                                    Ελληνικά
+                                </option>
+                            
+                                <option value="es">
+                                    español
+                                </option>
+                            
+                                <option value="fi">
+                                    suomi
+                                </option>
+                            
+                                <option value="fr">
+                                    français
+                                </option>
+                            
+                                <option value="it">
+                                    italiano
+                                </option>
+                            
+                                <option value="ko">
+                                    한국어
+                                </option>
+                            
+                                <option value="nl">
+                                    Nederlands
+                                </option>
+                            
+                                <option value="pl">
+                                    polski
+                                </option>
+                            
+                                <option value="pt">
+                                    Português
+                                </option>
+                            
+                                <option value="pt-br">
+                                    Português Brasileiro
+                                </option>
+                            
+                                <option value="ro">
+                                    Română
+                                </option>
+                            
+                                <option value="ru">
+                                    Русский
+                                </option>
+                            
+                                <option value="sk">
+                                    Slovensky
+                                </option>
+                            
+                                <option value="uk">
+                                    Українська
+                                </option>
+                            
+                                <option value="zh-hans">
+                                    简体中文
+                                </option>
+                            
+                        </select>
+                    </div>
+                    <button class="btn btn-default" type="submit" data-loading-text="Submitting...">Go</button>
+                </form>
+            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li><a id="login_link" href="/en-gb/accounts/login/"><i class="icon-signin"></i> Login or register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    <header class="header container-fluid">
+        <div class="page_inner">
+            <div class="row">
+                <div class="col-sm-7 h1"><a href="/en-gb/">Oscar</a><small> Sandbox</small></div>
+
+                
+                
+
+
+<div class="basket-mini pull-right hidden-xs">
+    <strong>Basket total:</strong>
+    
+        £0.00
+    
+
+    <span class="btn-group">
+        <a class="btn btn-default" href="/en-gb/basket/">View basket</a>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+            <li>
+
+
+
+
+
+
+<ul class="basket-mini-item list-unstyled">
+    
+        <li><p>Your basket is empty.</p></li>
+    
+</ul>
+</li>
+        </ul>
+    </span>
+</div>
+            </div>
+        </div>
+        
+            
+
+
+
+<div class="navbar primary navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header pull-right">
+            
+            <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".primary-collapse">
+                <span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </a>
+        </div>
+
+        <a class="btn btn-default navbar-btn btn-cart navbar-right visible-xs-inline-block" href="/en-gb/basket/">
+            <i class="icon-shopping-cart"></i>
+            Basket
+            
+        </a>
+
+
+        <div class="navbar-collapse primary-collapse collapse">
+            
+                <ul id="browse" class="nav navbar-nav">
+                    <li class="dropdown active ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Browse store
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" data-navigation="dropdown-menu">
+                            
+                            <li><a tabindex="-1" href="/en-gb/catalogue/">All products</a></li>
+                            
+                                <li class="divider"></li>
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/clothing_1/">Clothing</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                        <li class="dropdown-submenu">
+                                            <a tabindex="-1" href="/en-gb/catalogue/category/books_2/">Books</a>
+                                            <ul class="dropdown-menu">
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/books/fiction_3/">Fiction</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/en-gb/catalogue/category/books/non-fiction_5/">Non-Fiction</a></li>
+                                            
+
+                                            
+                                                </ul></li>
+                                            
+                                
+                            
+                            <li class="divider"></li>
+                            
+                                <li><a href="/en-gb/offers/">Offers</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            
+            
+
+<form method="get" action="/en-gb/search/" class="navbar-form navbar-right">
+    <div class="form-group">
+        <input type="search" name="q" placeholder="Search" tabindex="1" class="form-control" id="id_q">
+    </div>
+    <input type="submit" value="Search" class="btn btn-default">
+</form>
+
+        </div><!-- /navbar-collapse -->
+    </div>
+</div><!-- /navbar -->
+
+        
+    </header>
+
+    
+    
+        <div class="container-fluid page">
+            <div class="page_inner">
+                
+    <ul class="breadcrumb">
+        <li>
+            <a href="/en-gb/">Home</a>
+        </li>
+        <li class="active">Login or register</li>
+    </ul>
+
+                
+                
+
+
+
+<div id="messages" style="visibility: visible;">
+
+</div>
+
+                
+                <div class="content">
+                    
+
+                    
+                    <div id="promotions">
+                        
+                    </div>
+
+                    
+                    <div id="content_inner">
+
+    <div class="row">
+        <div class="col-sm-6 login_form">
+            <form id="login_form" action="/en-gb/accounts/login/" method="post" class="well">
+                <h2>Log In</h2>
+                <input type="hidden" name="csrfmiddlewaretoken" value="aBvqTxPYvUfuaZyx14Smf9INJh43L1c6ziilqB7RAVEort23CpEMIz2DZUzXvXCK">
+                
+
+
+
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_login-username" class=" control-label required">
+                        Email address
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="email" name="login-username" class="form-control" required="" id="id_login-username">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_login-password" class=" control-label required">
+                        Password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="password" name="login-password" class="form-control" required="" id="id_login-password">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    <input type="hidden" name="login-redirect_url" id="id_login-redirect_url">
+
+
+
+
+                <p><a href="/en-gb/password-reset/">I've forgotten my password</a></p>
+                <button name="login_submit" type="submit" value="Log In" class="btn btn-lg btn-primary" data-loading-text="Logging in...">Log In</button>
+            </form>
+        </div>
+        <div class="col-sm-6 register_form">
+            <form id="register_form" action="/en-gb/accounts/login/" method="post" class="well">
+                <h2>Register</h2>
+                <input type="hidden" name="csrfmiddlewaretoken" value="aBvqTxPYvUfuaZyx14Smf9INJh43L1c6ziilqB7RAVEort23CpEMIz2DZUzXvXCK">
+                
+
+
+
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-email" class=" control-label required">
+                        Email address
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="email" name="registration-email" class="form-control" required="" id="id_registration-email">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-password1" class=" control-label required">
+                        Password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="password" name="registration-password1" class="form-control" required="" id="id_registration-password1">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-password2" class=" control-label required">
+                        Confirm password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input type="password" name="registration-password2" class="form-control" required="" id="id_registration-password2">
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    <input type="hidden" name="registration-redirect_url" id="id_registration-redirect_url">
+
+
+
+
+                <button name="registration_submit" type="submit" value="Register" class="btn btn-lg btn-primary" data-loading-text="Registering...">Register</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+<footer class="footer container-fluid">
+    
+        
+    
+</footer>
+
+
+        
+        
+  
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="/static/oscar/js/jquery/jquery.min.a09e13ee94d5.js"><\/script>')</script>
+            <script src="/static/oscar/js/oscar/hack.358de0d3d185.js"></script>
+
+        
+  
+
+
+        
+        
+    
+
+    
+
+
+        
+        <script>
+            $(function() {
+                
+    
+    oscar.init();
+
+            });
+        </script>
+
+        
+    
+
+</body></html>
