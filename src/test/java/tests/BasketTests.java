@@ -1,5 +1,6 @@
 package tests;
 
+import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -61,6 +62,7 @@ public class BasketTests extends BaseTest {
             homePage.selectMenu("Books");
             catalogPage.selectBookByIndex(0);
             productPage.addToBasketFromProductPage();
+            Selenide.screenshot("screenshot_001"); //сделает скриншот
             productPage.checkoutNowIsDisplayed();
     }
 }

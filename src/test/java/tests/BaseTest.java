@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,11 +16,20 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest {
 
+ //   Logger logger = LoggerFactory.getLogger(TestBase.class);
+
     @BeforeMethod
     public void initTest() {
+        //public void initTest(Method m, Object[] p) {
         Configuration.browserSize = "1920x1080";
         open("http://selenium1py.pythonanywhere.com/en-gb/");
         Configuration.timeout = 10000;
+        //логирование:
+   /*     logger.info("======================================================");
+        logger.info("Start test: " + m.getName());
+        if(p.length != 0) {
+            logger.info(" --> With data: " + Arrays.asList(p));
+        } */
     }
 
 
@@ -35,6 +45,14 @@ public class BaseTest {
         }
 
         closeWebDriver();
+//лог:
+        /*     if(result.isSuccess()){
+            logger.info("Test result: PASSED");
+        }else{
+            logger.error("Test result: FAILED");
+        }
+        logger.info("Stop test: " + result.getMethod().getMethodName());
+        logger.info("======================================================"); */
     }
 }
 
